@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 
 app.set('view engine','hbs')
-app.use(express.static("puplic"))
+app.use(express.static('puplic'))
 
 app.get('/',(req,res)=>{
     res.render('index')
